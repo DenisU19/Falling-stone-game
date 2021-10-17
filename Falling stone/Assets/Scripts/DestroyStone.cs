@@ -6,7 +6,7 @@ public class DestroyStone : MonoBehaviour
 {
      void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Stone")
+        if (other.tag == "Big stone"||other.tag == "Small stone")
         {
             Destroy(other.gameObject);
         }
